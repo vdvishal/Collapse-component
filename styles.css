@@ -1,0 +1,308 @@
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+  line-height: 1.5;
+}
+
+.top-bar{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  background-color: #563D7C;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.brand{
+  color: rgba(255,255,255,1);
+}
+
+.d-block{
+  height: 2.25em;
+  width: 2.25em;
+}
+.svg{
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.left{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin:10px;
+  padding: 2px;
+}
+
+.tabs{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+.tabs div{
+  margin: 7px;
+  color: rgba(255,255,255);
+  flex: auto;
+}
+
+.active{
+  font-weight: 500;
+  color: rgba(255,255,255,1)!important;
+}
+
+.right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin:10px;
+  padding: 2px;
+  margin-left: auto;
+}
+
+.right div{
+  margin: 7px;
+  color: rgb(255,255,255);
+}
+
+.button{
+  opacity: 0.9;
+  border: 2px solid #FFE484;
+  color: #FFE484;
+  border-radius: 4px;
+  margin: 10px 30px 10px 0px;
+  padding: 8px 18px 6px 18px;
+  font-weight: 500;
+}
+
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  left: 0;
+  top: 10vh;
+}
+
+.sidebar{
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  top:10vh;
+  cursor: pointer;
+}
+
+.search{
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid #E5E5E5;
+  padding: 12px 18px 12px 18px;
+}
+
+.search div{
+  /* display:inline-block; */
+}
+
+#box{
+  width: 16.5vw;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  line-height: 32px;
+}
+
+.bars{
+  font-size: 2rem;
+  display: none;
+}
+
+.items{
+  color: #595959;
+  width: 17vw;
+  padding: 12.5px 17.5px;
+  height:75vh;
+  overflow-y: scroll;
+  margin-left: 5px;
+}
+
+.list-item{
+  font-weight: 450;
+  margin-top: 10px;
+}
+
+.list2{
+  margin-top: 30px;
+}
+
+.list-head{
+  margin-bottom: 30px;
+}
+
+.list-head div{
+  margin: 10px 0;
+  font-weight: lighter;
+  font-size: 0.925em
+}
+
+.main{
+  padding: 0px 50px;
+  width: 61.5vw;
+  position: relative;
+  left: 19vw;
+  top: 2vw;
+}
+
+.heading{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container{
+  border: 2px solid #F7F7F9;
+  padding: 25px 25px;
+}
+
+.sub-contain{
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+}
+
+.c1{
+  padding: 20px 25px;
+  background-color: #F7F7F7;
+  border-bottom:1px solid #DFDFDF;
+  cursor: pointer;
+}
+
+.c1-c{
+  padding: 20px 20px;
+  display: none;
+  text-align: left;
+}
+
+.link{
+  position: fixed;
+  right: 4vw;
+  top: 12vh;
+  padding: 12px;
+  border-left: 1px solid #EEEEEE;
+  color: #99979C;
+  cursor: pointer;
+}
+
+.sub-links{
+  position: relative;
+  left: 20px;
+}
+
+.link div{
+  margin: 6px;
+  font-weight: 400;
+  font-size: 0.90rem;
+}
+
+.tabs:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width:1200px){
+  .link{
+    display: none;
+  }
+
+.search{
+  margin-top: 5px;
+  padding-bottom: 8.5px;
+}
+
+}
+
+@media screen and (max-width:990px){
+  .button{
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .top-bar{
+    position: relative;
+  }
+
+  .right{
+  display: none;
+}
+
+  .left{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100vw;
+}
+
+.items{
+  display: none;
+  width: inherit;
+  padding: 12.5px 17.5px;
+  height:auto;
+  overflow-y: auto;
+  margin-left: 5px;
+}
+
+
+.tabs{
+  width: 97vw;
+  font-size: 0.85rem
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+  top: -9.8vh;
+  width:100vw;
+}
+
+.sidebar{
+  position: relative;
+
+}
+
+.search{
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid; */
+}
+
+.search .search-box{
+  flex: 1;
+  flex-basis: 100%;
+}
+
+#box{
+ width: 100%;
+}
+
+.bars{
+  display: block;
+  position: relative;
+  top: -4px;
+  left: 8px;
+}
+
+.main{
+  width: 92.5vw;
+  position: relative;
+  top: 7.5vh;
+  left: 0;
+  padding: 1vw;
+  margin-left: 2vw;
+}
+}
